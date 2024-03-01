@@ -1,5 +1,6 @@
 "use client";
 import {useChat} from "ai/react";
+import {Button} from "./ui/button";
 import {Input} from "./ui/input";
 
 export default function Chat() {
@@ -60,9 +61,9 @@ export default function Chat() {
               />
             </div>
           </div>
-          {/* <Button type='submit' className='h-10'>
+          <Button type='submit' className='h-10'>
             Send
-          </Button> */}
+          </Button>
         </div>
       </form>
     </main>

@@ -30,7 +30,7 @@ export function Test() {
               Hi there! How can I help you today?
             </div>
             <div className='rounded-xl bg-gray-100 dark:bg-gray-800 p-4 text-sm break-words'>
-              What's the weather like in San Francisco?
+              What is the weather like in San Francisco?
             </div>
           </div>
           <div className='flex items-end gap-2'>

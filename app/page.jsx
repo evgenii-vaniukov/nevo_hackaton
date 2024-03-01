@@ -1,4 +1,4 @@
-import {Test} from "../components/test";
+import {AskIsrael} from "../components/ask-israel";
 export default function Home() {
-  return <Test />;
+  return <AskIsrael />;
 }

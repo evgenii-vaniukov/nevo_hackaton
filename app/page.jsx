@@ -1,4 +1,4 @@
-import {AskAI} from "@/components/ask-ai";
+import {Test} from "../components/test";
 export default function Home() {
-  return <AskAI />;
+  return <Test />;
 }

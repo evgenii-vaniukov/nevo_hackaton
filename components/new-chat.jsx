@@ -1,4 +1,5 @@
 "use client";
+
 import {Button} from "@/components/ui/button";
 import {
   Card,
@@ -27,18 +28,17 @@ export function NewChat() {
           </CardDescription>
         </CardHeader>
         <CardContent className='p-4 flex flex-col gap-4'>
-          <div className='flex flex-col gap-2'>
-            <div className='rounded-xl bg-gray-100 dark:bg-gray-800 p-4 text-sm break-words'>
-              {messages.map((m, index) => (
-                <div
-                  key={index}
-                  className='rounded-xl bg-gray-100 dark:bg-gray-800 p-4 text-sm break-words'
-                >
-                  {/* {m.role === "user" ? "User: " : "AI: "} */}
-                  {m.content}
-                </div>
-              ))}
-            </div>
+          <div className='flex flex-col gap-2'></div>
+          <div className='rounded-xl bg-gray-100 dark:bg-gray-800 p-4 text-sm break-words'>
+            {messages.map((m, index) => (
+              <li
+                key={index}
+                className='text-sm text-gray-500 dark:text-gray-400 rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-200 p-4 max-w-[75%] dark:border-gray-800'
+              >
+                {/* {m.role === "user" ? "User: " : "AI: "} */}
+                {m.content}
+              </li>
+            ))}
           </div>
           <div className='flex items-end gap-2'>
             <Input
